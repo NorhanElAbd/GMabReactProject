@@ -1,0 +1,100 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#menuPart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100vh;
+    width: 325px;
+    background: black;
+    color: white;
+    padding: 30px;
+}
+
+select {
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.listItems {
+    list-style: none;
+    padding:0
+}
+
+    .listItems li {
+        padding: 20px 10px;
+        border-bottom: 1px solid #3a3939;
+    }
+
+.listItems li:hover {
+    background: #212121;
+}
+
+#arrowMenu {
+    position: absolute;
+    border: none;
+    top: 0;
+    z-index: 9999;
+    left: 324px;
+    color: white;
+    background: black;
+    padding: 10px;
+    font-size: 20px;
+    cursor:pointer
+}
+
+.leftBtn {
+    left: 0!important;
+}
+
+.hideMenu {
+    display:none !important
+}
+
+@media only screen and (max-width: 480px) {
+    #menuPart {
+        width: 200px;
+        padding: 25px 20px;
+    }
+
+    #arrowMenu {
+        left: 199px;
+    }
+}
